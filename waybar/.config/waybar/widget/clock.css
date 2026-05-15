@@ -1,0 +1,29 @@
+* {
+    border: none;
+    /* Fontu JetBrains Mono olarak güncelledik */
+    font-family: "JetBrains Mono", monospace; 
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#clock {
+    /* Nord Snow Storm: Temiz kırık beyaz/gri metin rengi */
+    color: #ECEFF4; 
+    
+    /* Nord Polar Night: Arka plan için koyu mavi-gri (Hafif saydam) */
+    background-color: rgba(46, 52, 64, 0.65); 
+    
+    font-size: 56px; 
+    font-weight: bold;
+    padding: 15px 40px; 
+    border-radius: 20px; 
+    
+    /* Çerçeve için Nord'un bir ton açığı olan kurşuni renk */
+    border: 2px solid #4C566A; 
+    
+    /* Hafif bir gölge ile cam hissiyatını (glassmorphism) artırıyoruz */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}

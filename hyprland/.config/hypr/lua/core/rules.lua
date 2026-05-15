@@ -1,0 +1,1 @@
+-- Pencere kuralları buraya gelecek

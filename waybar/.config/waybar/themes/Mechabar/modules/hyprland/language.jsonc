@@ -1,0 +1,8 @@
+{
+	"hyprland/language": {
+    "format": "   {short}",
+    "on-click": "hyprctl switchxkblayout all next",
+    "tooltip": true,
+    "tooltip-format": "{long}"
+}
+}

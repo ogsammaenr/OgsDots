@@ -1,0 +1,13 @@
+{
+  // Cliphist
+  "custom/cliphist": {
+    "format": "",
+    "on-click": "sleep 0.1 && ~/.config/ml4w/scripts/ml4w-cliphist",
+    "on-click-right": "sleep 0.1 && ~/.config/ml4w/scripts/ml4w-cliphist d",
+    "on-click-middle": "sleep 0.1 && ~/.config/ml4w/scripts/ml4w-cliphist w",
+    "tooltip-format": "Left: Open clipboard Manager\nRight: Delete an entry\nMiddle: Clear list",
+    "on-scroll-up": "true",
+    "on-scroll-down": "true"
+  },
+
+}

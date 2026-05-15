@@ -1,0 +1,90 @@
+/*----------------
+    Media info
+----------------*/
+
+#mpris {
+	padding: 0 12px;
+}
+
+#custom-mpris {
+	/* Temanın ana font dosyasında tanımlı olan sabit genişlikli (monospace) fontu kullanıyoruz */
+	font-family: "CommitMono Nerd Font", monospace;
+	min-width: 220px; /* Titremeyi engelleyen asıl sihirli dokunuş */
+}
+
+/*------------
+    Volume
+------------*/
+
+#custom-left_div.6 {
+	color: @volume;
+}
+#pulseaudio,
+#wireplumber {
+	background-color: @volume;
+}
+
+/*----------------
+    Brightness
+----------------*/
+
+#custom-left_div.7 {
+	background-color: @volume;
+	color: @backlight;
+}
+#backlight {
+	background-color: @backlight;
+}
+
+/*-------------
+    Battery
+-------------*/
+
+#custom-left_div.8 {
+	background-color: @backlight;
+	color: @battery;
+}
+#battery {
+	background-color: @battery;
+}
+#custom-left_inv.2 {
+	color: @battery;
+}
+
+/*-------------
+     Cliphist
+-------------*/
+#custom-cliphist {
+    padding: 0 19px 0 16px;
+    color: @accent;
+    background-color: @battery;
+}
+#custom-cliphist:hover {
+    background-color: @hover-bg;
+}
+
+/*----------------
+    Power menu
+----------------*/
+
+#custom-power {
+	border-radius: 16px;
+	padding: 0 19px 0 16px;
+	color: @accent;
+}
+#custom-power:hover {
+	background-color: @hover-bg;
+}
+
+/*----------------
+ *   Notification
+ - *---------------*/
+
+#custom-notification {
+border-radius: 16px;
+padding: 0 10px;
+color: @accent;
+}
+#custom-notification:hover {
+background-color: @hover-bg;
+}

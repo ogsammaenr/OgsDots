@@ -1,0 +1,16 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "exclusive": false,
+    "passthrough": true,
+    "margin-top": 20,
+    "modules-center": [
+        "clock"
+    ],
+    "clock": {
+        "justify": "center",
+        "format": "{:%H:%M\n<span size='16pt' font_weight='normal' color='#88C0D0'>%A, %d %B</span>}",
+        "interval": 60,
+        "tooltip": false
+    }
+}

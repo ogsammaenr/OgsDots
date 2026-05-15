@@ -1,0 +1,1 @@
+-- Autostart ayarları buraya gelecek

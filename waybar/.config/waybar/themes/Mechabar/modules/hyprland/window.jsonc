@@ -1,0 +1,35 @@
+{
+	"hyprland/window": {
+		"format": "{class}",
+		"rewrite": {
+			"": "Desktop",
+			"kitty": "Terminal",
+			"zsh": "Terminal",
+			"~": "Terminal",
+			"zen": "Zen Browser",
+			"firefox": "FireFox",
+			"org.kde.kate": "Kate",
+			"org.kde.dolphin": "Dolphin",
+			"vlc": "vlc - Medya Oynatıcı",
+			"code-oss": "VS Code",
+	        "chrome-kfocjihoigpdahhkeclpkpcoofjdicen-Default": "Gemini",
+            "chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default": "WhatsApp Web",
+            "chrome-picebhhlijnlefeleilfbanaghjlkkna-Default": "MonkeyType",
+            "chrome-cadlkienfkclaiaibeoongdcgmdikeeg-Default": "ChatGPT",
+            "chrome-hjkiphhpjfknmjpkppinjcgdlbjmiioa-Default": "Azgaar's Fantasy Map Generator",
+            "chrome-magkoliahgffibhgfkmoealggombgknl-Default": "Discord",
+            "chrome-amiegmckcgchmpimpkgpdoagokcfooee-Default": "Figma",
+            "chrome-majiogicmcnmdhhlgmkahaleckhjbmlk-Default": "Telegram Web",
+            "chrome-jdklklfpinionkgpmghaghehojplfjio-Default": "Photopea",
+            
+        },
+		// "separate-outputs":
+		// "icon":
+		// "icon-size":
+		// "min-length":
+		// "max-length":
+		// "tooltip":
+		"swap-icon-label": false
+		// "expand":
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"custom/mpris": {
+		"exec": "~/.config/waybar/themes/Mechabar/scripts/mpris-scroll",
+		"format": "{}",
+		"on-click": "playerctl play-pause",
+		"on-click-right": "playerctl next",
+		"on-click-middle": "playerctl previous",
+		"tooltip": false
+	}
+}
