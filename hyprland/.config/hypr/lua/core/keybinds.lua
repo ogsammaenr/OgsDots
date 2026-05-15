@@ -68,3 +68,26 @@ bind("XF86AudioNext", dsp.exec_cmd("playerctl next"), { locked = true })
 bind("XF86AudioPause", dsp.exec_cmd("playerctl play-pause"), { locked = true })
 bind("XF86AudioPlay", dsp.exec_cmd("playerctl play-pause"), { locked = true })
 bind("XF86AudioPrev", dsp.exec_cmd("playerctl previous"), { locked = true })
+
+-- Touchpad cihaz ismini bir değişkene atıyoruz
+local state_file = os.getenv("HOME") .. "/.cache/tp_state"
+
+-- Harici script gerektirmeyen, doğrudan Lua içinden çalışan Bash mantığı
+local toggle_cmd = string.format(
+	[[bash -c '
+    if [ "$(cat "%s" 2>/dev/null)" = "false" ]; then
+        echo "true" > "%s"
+        notify-send -t 1500 -u low "Touchpad" "Aktif 🟢"
+    else
+        echo "false" > "%s"
+        notify-send -t 1500 -u low "Touchpad" "Devre Dışı 🔴"
+    fi
+    hyprctl reload >/dev/null
+']],
+	state_file,
+	state_file,
+	state_file
+)
+
+-- Atamak istediğin kısayol (Sende hl.bind veya bind olabilir)
+bind("SUPER + SHIFT + ESCAPE", dsp.exec_cmd(toggle_cmd))

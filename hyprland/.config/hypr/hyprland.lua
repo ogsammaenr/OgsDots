@@ -10,6 +10,7 @@ local function load_my_config()
 	require("lua.core.autostart")
 	require("lua.core.rules")
 	require("lua.profiles.monitors." .. state.monitor_profile)
+	require("lua.profiles.enviroments." .. state.enviroments_profile)
 end
 
 local success, error_message = pcall(load_my_config)
